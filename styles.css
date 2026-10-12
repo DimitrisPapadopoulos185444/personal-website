@@ -1246,3 +1246,9 @@ hyphens: auto;
 -webkit-hyphens: auto;
 }
 }
+
+@media screen and (max-width: 768px) {
+    .text-container p {
+        text-align: center;
+    }
+}
