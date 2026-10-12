@@ -1,11 +1,10 @@
-/* StylesPapadopoulosPage.css */
-/* Εδώ τοποθετούνται όλες οι οδηγίες αισθητικής για την προσωπική ιστοσελίδα */
+/* Αρχείο css ιστοσελίδας - καθορισμός παραμέτρων αισθητικής και τοποθέτησης στοιχείων */
         
 		
 		html {
     scroll-behavior: smooth;
 }
-		@font-face { /*Εισαγωγή εξατομικευμένης γραμματοσειράς*/
+		@font-face { /* εισαγωγή εξατομικευμένης γραμματοσειράς ιστοσελίδας */
             font-family: 'Zetafonts_-_Lovelace_Text_Regular';
             src: url('Zetafonts_-_Lovelace_Text_Regular.otf?v=1729090681') format('truetype'); 
             font-weight: normal;
@@ -40,7 +39,7 @@
 		}
 
 
-        /* Στυλ για το header */
+        /* Header παραμετροποίηση */
         header {
             background: rgba(42, 66, 124, 0.7);
 						width: 100%;
@@ -50,7 +49,7 @@
             text-align: center;
         }
 
-        /* Στυλ για το κεντρικό μενού */
+        /* Κεντρικό μενού παραμετροποίηση */
         nav {
             display: flex;
 			width: 100%;
