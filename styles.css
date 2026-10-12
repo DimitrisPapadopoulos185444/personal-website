@@ -901,6 +901,332 @@ body.dark-mode .glass {
 }
 
 
+/* ==========================================
+   MOBILE RESPONSIVE DESIGN
+   Ισχύει για οθόνες έως 768px
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Βασικές ρυθμίσεις */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow-wrap: break-word;
+    }
+
+    main {
+        padding: 20px 12px;
+    }
+
+    /* Τίτλος ιστοσελίδας */
+    header {
+        padding: 18px 12px;
+    }
+
+    h1,
+    body.dark-mode h1 {
+        font-size: clamp(23px, 6vw, 32px);
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    h2,
+    body.dark-mode h2 {
+        font-size: 22px;
+        line-height: 1.4;
+        text-align: left;
+        text-align-last: auto;
+        margin: 0 0 14px;
+    }
+
+    h3,
+    body.dark-mode h3 {
+        font-size: clamp(27px, 7vw, 36px);
+        line-height: 1.25;
+        text-align: center;
+        text-align-last: auto;
+        margin: 12px 0;
+    }
+
+    h4,
+    body.dark-mode h4 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    p,
+    body.dark-mode p {
+        font-size: 16px;
+        line-height: 1.8;
+        max-width: 100%;
+        margin: 0 0 16px;
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+
+    /* Μενού πλοήγησης */
+    nav {
+        padding: 8px 10px;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 9px 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #themeToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 44px;
+        min-height: 44px;
+        padding: 6px;
+    }
+
+    #themeIcon {
+        width: 28px;
+        height: 28px;
+        max-width: none;
+        max-height: none;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    /* Γυάλινα πλαίσια */
+    .glass,
+    body.dark-mode .glass {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 0 22px;
+        padding: 20px 16px;
+        border-radius: 18px;
+    }
+
+    /* Αρχική παρουσίαση */
+    .image-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .image-container {
+        width: min(65%, 230px);
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .text-container {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .text-container p {
+        text-align: center;
+    }
+
+    /* Κουμπιά αρχικής σελίδας */
+    .button-container {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-top: 8px;
+    }
+
+    .button,
+    body.dark-mode .button {
+        flex: 1 1 140px;
+        width: auto;
+        min-height: 46px;
+        height: auto;
+        margin: 0;
+        padding: 12px;
+        border-radius: 12px;
+        font-size: 15px;
+    }
+
+    /* Tooltip: δεν βασιζόμαστε στο hover στο κινητό */
+    .tooltip {
+        display: none;
+    }
+
+    /* Δεξιότητες και γλώσσες */
+    .skills {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 12px 0 24px;
+    }
+
+    .skill-item {
+        font-size: 14px;
+        padding: 9px 12px;
+        margin: 0;
+        border-radius: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Καρτέλες σπουδών / εργασίας / ενδιαφερόντων */
+    .tabs-container {
+        width: 100%;
+    }
+
+    .tabs-menu,
+    body.dark-mode .tabs-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+        margin: 18px 0;
+        padding: 0;
+    }
+
+    .tabs-menu li,
+    body.dark-mode .tabs-menu li,
+    .tabs-menu li.active,
+    body.dark-mode .tabs-menu li.active {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px 12px;
+        flex: 1 1 130px;
+        text-align: center;
+    }
+
+    .tab-content,
+    body.dark-mode .tab-content {
+        margin-top: 18px;
+    }
+
+    .tab-content.active,
+    body.dark-mode .tab-content.active {
+        margin-bottom: 0;
+    }
+
+    /* Χρονολόγιο */
+    .container,
+    body.dark-mode .container {
+        width: 100%;
+        height: auto;
+        margin: 20px 0 0;
+    }
+
+    .rightbox,
+    body.dark-mode .rightbox {
+        padding: 0;
+        height: auto;
+    }
+
+    .rb-container,
+    body.dark-mode .rb-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .rb-container ul.rb,
+    body.dark-mode .rb-container ul.rb {
+        margin: 0;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .rb-container ul.rb li,
+    body.dark-mode .rb-container ul.rb li {
+        width: 100%;
+        padding: 0 0 24px 22px;
+        box-sizing: border-box;
+    }
+
+    .rb-container ul.rb li::before,
+    body.dark-mode .rb-container ul.rb li::before {
+        left: -10px;
+        width: 14px;
+        height: 14px;
+        border-width: 4px;
+    }
+
+    .rb-container ul.rb li h2,
+    body.dark-mode .rb-container ul.rb li h2 {
+        font-size: 18px;
+    }
+
+    /* Υποσέλιδο */
+    footer {
+        width: 100%;
+        padding: 20px 12px;
+        background-position: center;
+    }
+
+    footer p1 {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
+
+/* Πολύ μικρές οθόνες */
+@media screen and (max-width: 380px) {
+
+    main {
+        padding: 14px 8px;
+    }
+
+    .glass,
+    body.dark-mode .glass {
+        padding: 16px 12px;
+    }
+
+    nav ul li a {
+        padding: 8px 7px;
+        font-size: 13px;
+    }
+
+    .image-container {
+        width: min(75%, 210px);
+    }
+
+    .tabs-menu li,
+    body.dark-mode .tabs-menu li,
+    .tabs-menu li.active,
+    body.dark-mode .tabs-menu li.active {
+        flex-basis: 100%;
+    }
+}
+
 
 
 
