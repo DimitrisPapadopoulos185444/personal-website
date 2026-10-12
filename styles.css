@@ -178,17 +178,14 @@
 		
 		
 		
-        p {
-            font-size: 1.4vw;
-            color: #666;
-            max-width: 65%
-            max-height: 100%
-			margin: 0 auto;
-			margin-top: -1%;
-			line-height: 150%;
-			text-align: justify; /* κάλυψη του 100% του πλάτους από το κείμενο */	
-			
-        }
+p {
+    font-size: clamp(15px, 1.1vw, 18px);
+    color: #666;
+    max-width: 100%;
+    line-height: 1.7;
+    margin: 0 0 16px;
+    text-align: justify;
+}
 		
 		p1 {
             font-size: 1.4vw;
