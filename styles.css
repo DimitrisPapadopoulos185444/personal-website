@@ -1,52 +1,47 @@
-/* Αρχείο css ιστοσελίδας - καθορισμός παραμέτρων αισθητικής και τοποθέτησης στοιχείων */
+/* Αρχείο CSS ιστοσελίδας - καθορισμός παραμέτρων αισθητικής και τοποθέτησης στοιχείων */
         
-		
-		html {
+html {
     scroll-behavior: smooth;
-}
-		@font-face { /* εισαγωγή εξατομικευμένης γραμματοσειράς ιστοσελίδας */
-            font-family: 'Zetafonts_-_Lovelace_Text_Regular';
-            src: url('Zetafonts_-_Lovelace_Text_Regular.otf?v=1729090681') format('truetype'); 
-            font-weight: normal;
-            font-style: normal;
-        }
+     }
+@font-face { /* εισαγωγή εξατομικευμένης γραμματοσειράς ιστοσελίδας */
+    font-family: 'Zetafonts_-_Lovelace_Text_Regular';
+    src: url('Zetafonts_-_Lovelace_Text_Regular.otf?v=1729090681') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+            }		
 		
-		
-		
-		body {
-		  font-family: 'Zetafonts_-_Lovelace_Text_Regular', serif; /*γραμματοσειρά*/
-		  margin: 0;
-		  padding: 0;
-		  background: radial-gradient(circle, rgba(0, 169, 149, 0.3) 20%, 
-			  rgba(0, 169, 149, 0.1) 35%,  /* Πιο απαλό πράσινο πριν το κίτρινο */
-			  rgba(255, 215, 0, 0.2) 50%, 
-			  rgba(255, 215, 0, 0.1) 65%,  /* Πιο απαλό κίτρινο πριν το διάφανο */
-			  rgba(0, 0, 0, 0) 80%);
-		  background-size: 200% 200%; /* Αυξημένο μέγεθος φόντου ώστε να υπάρχει δυνατότητα κίνησης */
-		  animation: moveGradient 20s ease-in-out infinite; /* Animation που επαναλαμβάνεται (διάρκεια: 20'') */
-        }
+body {
+	font-family: 'Zetafonts_-_Lovelace_Text_Regular', serif; /*γραμματοσειρά*/
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(circle, rgba(0, 169, 149, 0.3) 20%, 
+	rgba(0, 169, 149, 0.1) 35%,  /* Πιο απαλό πράσινο πριν το κίτρινο */
+	rgba(255, 215, 0, 0.2) 50%, 
+	rgba(255, 215, 0, 0.1) 65%,  /* Πιο απαλό κίτρινο πριν το διάφανο */
+	rgba(0, 0, 0, 0) 80%);
+	background-size: 200% 200%; /* Αυξημένο μέγεθος φόντου ώστε να υπάρχει δυνατότητα κίνησης */
+	animation: moveGradient 20s ease-in-out infinite; /* Animation που επαναλαμβάνεται (διάρκεια: 20'') */
+    }
 
-		@keyframes moveGradient { /*μετακίνηση χρωμάτων φόντου */
-		  0% {
-			background-position: 0% 0%; /* Αρχική θέση φόντου */
-		  }
-		  50% {
-			background-position: 100% 100%; /* Σταδιακή μετακίνηση στη μέση */
-		  }
-		  100% {
-			background-position: 0% 0%; /* Επιστροφή στην αρχική θέση */
-		  }
+@keyframes moveGradient { /*μετακίνηση χρωμάτων φόντου */
+	0% {
+		background-position: 0% 0%; /* Αρχική θέση φόντου */
 		}
+	50% {
+		background-position: 100% 100%; /* Σταδιακή μετακίνηση στη μέση */
+		}
+	100% {
+		background-position: 0% 0%; /* Επιστροφή στην αρχική θέση */
+		}
+	}
 
 
-        /* Header παραμετροποίηση */
-        header {
-            background: rgba(42, 66, 124, 0.7);
-						width: 100%;
-
-            color: white;
-            padding: 1%; /* κενός χώρος πάνω & κάτω από το κείμενο (ήταν: 0.5rem)*/
-            text-align: center;
+/* Header παραμετροποίηση */
+header { background: rgba(42, 66, 124, 0.7);
+		width: 100%;
+        color: white;
+        padding: 1%; /* κενός χώρος πάνω & κάτω από το κείμενο (ήταν: 0.5rem)*/
+        text-align: center;
         }
 
         /* Κεντρικό μενού παραμετροποίηση */
