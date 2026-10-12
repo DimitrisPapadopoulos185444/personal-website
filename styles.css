@@ -1228,7 +1228,15 @@ body.dark-mode .glass {
 }
 
 
-
+/* Στοίχιση κειμένου σε κινητά */
+@media screen and (max-width: 768px) {
+p,
+body.dark-mode p {
+text-align: justify;
+hyphens: auto;
+-webkit-hyphens: auto;
+}
+}
 
 
 
