@@ -1228,6 +1228,15 @@ body.dark-mode .glass {
 }
 
 
+
+
+
+
+
+footer.dark-mode {
+    background: rgba(0, 0, 30, 0.9);
+}
+
 /* Στοίχιση κειμένου σε κινητά */
 @media screen and (max-width: 768px) {
 p,
@@ -1236,11 +1245,4 @@ text-align: justify;
 hyphens: auto;
 -webkit-hyphens: auto;
 }
-}
-
-
-
-
-footer.dark-mode {
-    background: rgba(0, 0, 30, 0.9);
 }
